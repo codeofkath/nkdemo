@@ -621,7 +621,9 @@ footer {
 @media (max-width: 400px) {
     .sec1 {
         height: 80vh;
-        justify-content: space-between;
+        justify-content: center;
     }
+
+    
 
 }
