@@ -176,14 +176,8 @@
 .line-d {
     width: 100%;
     z-index: -1;
-    position: absolute;
-    bottom: 0%;
-
-    border-width: 1.6px 1.6px 1.6px 1.6px;
-    border-radius: 95% 4% 92% 5%/45% 95% 6% 95%;
-    border-style: dotted;
-    border-color: var(--c-3);
-
+    margin-top: -14px;
+    border: .5px solid #CEC4C1;
 
 }
 
@@ -554,7 +548,7 @@
 
 /*Media queries*/
 
-@media (min-width: 1280px) {
+ @media (min-width: 1280px) {
     .sec2 {
         gap: 10%;
     }
@@ -569,6 +563,7 @@
         text-align: left;
     }
 }
+
 
 @media (max-width: 900px) {
     .sec1{
@@ -631,7 +626,6 @@
 
     .notes-sec {
         padding: 7% 5% 7% 5%;
-        /* 2rem 2.6rem 2.6rem 2rem */
     }
 
     .notes-content .bttn-prop {
@@ -663,4 +657,4 @@
         width: 90%;
     }
 
-}
+} 
