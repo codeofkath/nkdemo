@@ -50,10 +50,10 @@
     --font-3: 'NF Pixels';
 
     /* Tamaño textos / la base es 18px, por lo cual 1rem = 16px*/
-    --xl: clamp(2.4rem, 2rem + 2vw, 3.4rem);
-    --lg: clamp(1.8rem, 1.6rem + 1.2vw, 2.7rem);
-    --md: clamp(1.6rem, 1.4rem + 1.2vw, 1.8rem);
-    --bs: clamp(0.9rem, 0.8rem + 0.16vw, 1.1rem);
+    --xl: clamp(2.4rem, 2.2rem + 2.7vw, 3.6rem);
+    --lg: clamp(1.8rem, 1.6rem + 1.4vw, 2.8rem);
+    --md: clamp(1.6rem, 1.4rem + 1.2vw, 1.9rem);
+    --bs: clamp(0.9rem, 0.9rem + 0.1vw, 1rem);
     --sm: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
     --xs: clamp(0.7rem, 0.68rem + 0.05vw, 0.75rem);
 
@@ -612,16 +612,8 @@ footer {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     header {
         margin-top: 12%;
     }
 }
-
-@media (max-width: 405px) {
-    .sec1 {
-        height: 80vh;
-        justify-content: center;
-    }
-
-} 

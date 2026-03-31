@@ -15,7 +15,7 @@
 
 
 .intro {
-    width: 92%;
+    width: 80%;
     padding: 0;
     gap: 12px;
     align-self: center;
@@ -556,7 +556,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
     .intro {
         margin-left: auto;
         width: 40%;
@@ -567,7 +567,7 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .sec1 {
         padding-top: 16%;
     }
@@ -621,6 +621,11 @@
 
 @media (max-width: 768px) {
 
+    .sec1 {
+        height: 70vh;
+        justify-content: center;
+    }
+
     .hallo,
     .soykath {
         -webkit-text-stroke: .22rem var(--c-1);
@@ -665,4 +670,10 @@
         width: 90%;
     }
 
+}
+
+@media (max-width: 480px){
+    .intro{
+        width: 100%;
+    }
 }
