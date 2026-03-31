@@ -612,8 +612,8 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     header {
-        margin-top: 12%;
+        margin-top: 10%;
     }
 }
