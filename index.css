@@ -622,10 +622,10 @@
 @media (max-width: 768px) {
 
     .sec1 {
-        height: 60vh;
+        height: 75vh;
         justify-content: center;
         padding: 0;
-        margin: 10vh 0;
+        margin: 15% 0 25% 0;
     }
 
     .hallo,
