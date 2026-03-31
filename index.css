@@ -27,13 +27,15 @@
 
 .hallo {
     color: #ADA7A6;
-    -webkit-text-stroke: .3rem var(--c-1);
-    paint-order: stroke;
 }
 
 .soykath {
     color: #D2D2D2;
-    -webkit-text-stroke: .3rem var(--c-1);
+}
+
+.hallo,
+.soykath {
+    -webkit-text-stroke: .26rem var(--c-1);
     paint-order: stroke;
 }
 
@@ -548,7 +550,7 @@
 
 /*Media queries*/
 
- @media (min-width: 1280px) {
+@media (min-width: 1280px) {
     .sec2 {
         gap: 10%;
     }
@@ -566,7 +568,7 @@
 
 
 @media (max-width: 900px) {
-    .sec1{
+    .sec1 {
         padding-top: 16%;
     }
 
@@ -618,6 +620,13 @@
 }
 
 @media (max-width: 768px) {
+
+    .hallo,
+    .soykath {
+        -webkit-text-stroke: .22rem var(--c-1);
+        paint-order: stroke;
+    }
+
     .row2 {
         flex-direction: column;
         align-items: center;
@@ -651,10 +660,9 @@
     }
 
 
-
     #nookbits,
     .status {
         width: 90%;
     }
 
-} 
+}
