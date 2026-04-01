@@ -2,7 +2,7 @@ const openButton = document.getElementById('hambuMenu')
 const navbar = document.getElementById('navcont')
 const menuItems = document.querySelector('.menuItems')
 const bckgMenuList = document.querySelector('.bckgNavList')
-
+const mainContent = document.getElementById('main-content');
 
 const media = window.matchMedia("(width < 768px)")
 
@@ -20,14 +20,19 @@ function updateNavbar(e) {
         navbar.classList.remove('menuAnimation')
         menuItems.classList.remove('active')
         bckgMenuList.classList.remove('active')
+        document.body.classList.remove('no-scroll')
     }
 }
 
 function openRespMenu() {
     navbar.classList.add('menuAnimation')
+    mainContent.setAttribute('inert', '')
     navbar.removeAttribute('inert')
 
+    document.body.classList.add('no-scroll')
+
     void navbar.offsetWidth;
+
 
     navbar.classList.add('showMenu')
     menuItems.classList.add('active')
@@ -40,8 +45,8 @@ function closeRespMenu() {
     menuItems.classList.remove('active')
     bckgMenuList.classList.remove('active')
     openButton.setAttribute('aria-expanded', 'false')
-
-
+    mainContent.removeAttribute('inert');
+    document.body.classList.remove('no-scroll')
     setTimeout(() => {
         navbar.classList.remove('menuAnimation')
         navbar.setAttribute('inert', '')
