@@ -665,8 +665,9 @@ footer {
 
 /* Frase / Quote */
 #quoteMenu {
+  width: 100%;
   position: relative;
-  padding: 8px;
+  padding: 10px;
   padding-right: 5vw;
   margin-top: 14%;
   margin-bottom: 20%;
