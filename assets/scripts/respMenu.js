@@ -4,7 +4,7 @@ const menuItems = document.querySelector('.menuItems')
 const bckgMenuList = document.querySelector('.bckgNavList')
 const mainContent = document.getElementById('main-content');
 
-const media = window.matchMedia("(width < 768px)")
+const media = window.matchMedia("(width < 769px)")
 
 media.addEventListener('change', (e) => updateNavbar(e))
 
@@ -52,7 +52,7 @@ function closeRespMenu() {
     setTimeout(() => {
         navbar.classList.remove('menuAnimation')
         navbar.setAttribute('inert', '')
-    }, 250)
+    }, 200)
 }
 
 updateNavbar(media)
