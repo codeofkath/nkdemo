@@ -84,9 +84,8 @@
     gap: 1.5rem;
 }
 
-
 .notes-content li {
-    border-bottom: 2px solid var(--c-3);
+    border-bottom: 2px dotted var(--c-3);
 }
 
 .note-entry article {
@@ -240,10 +239,10 @@
         gap: 0.4rem;
     }
 
-    .ant::before, .desp:after {
-    width: 2.1rem;
-
-}
+    .ant::before,
+    .desp:after {
+        width: 1.7rem;
+    }
 
 
 }
