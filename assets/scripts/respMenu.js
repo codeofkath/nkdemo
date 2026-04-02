@@ -58,11 +58,13 @@ function closeRespMenu() {
 updateNavbar(media)
 
 const frases = [
-  "¡Qué bueno verte de nuevo!",
-  "Ser malo en algo es el primer paso para ser extrañamente bueno en algo",
-  "Hoy es un gran día para explorar.",
-  "Hecho con ❤️ para ti.",
-  "¡No te olvides de sonreír!"
+  "Lo que esta fuera de tu control también debe estar fuera de tu cabeza.",
+  "Ser malo en algo es el primer paso para ser extrañamente bueno en algo.",
+  "☕︎ Cofffe is my safe place.",
+  "Al mal tiempo, pensamiento crítico.",
+  "Recuerda tomar un poco de agua, glu glu ｡˚○ ",
+  "Me tiembla un ojito, pero lo sigo intentando...",
+  "Ser adulto: ★☆☆☆☆ [No lo recomiendo]"
 ];
 
 const contenedorFrase = document.getElementById('quoteDinamic');
