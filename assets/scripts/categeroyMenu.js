@@ -2,7 +2,7 @@ const openCategoryList = document.getElementById('buttonList')
 const listCategories = document.getElementById('categoriesList')
 const boxCategory = document.querySelector('.categories-block')
 
-const mediaQ = window.matchMedia("(width < 769px)")
+const mediaQ = window.matchMedia("(width < 1025px)")
 
 mediaQ.addEventListener('change', (e) => updateListCategories(e))
 
@@ -42,4 +42,4 @@ function closeCategoryMenu() {
     }, 150)
 }
 
-updateListCategories(media)
+updateListCategories(mediaQ)
